@@ -1,2 +1,10 @@
 git config --global user.Name "Huy"
 git config --global user.Email "daoxuanhuy2004zz@gmail.com"
+
+
+git init  #tạo repo ở local
+git add . 
+git commit -m "message"
+
+git remote add origin <url> #Liên kết local với github
+git push origin main        #push code lên github
