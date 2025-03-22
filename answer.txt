@@ -8,3 +8,14 @@ git commit -m "message"
 
 git remote add origin <url> #Liên kết local với github
 git push origin main        #push code lên github
+
+git convension
+<type>: <short description>
+type : loại commit
+    chore: sửa nhỏ lẻ, chính tả, xóa file không dùng tới
+    feat: thêm tính năng mới, test case mới
+    fix: sửa lỗi 1 test trước đó
+short description: mô tả ngắn gọn(50 ký tự), tiếng anh hoặc tiếng việt không dấu
+example:
+    chore: remove unsaved files
+    feat: add code for exercises 2

@@ -1,0 +1,4 @@
+git init # khởi tạo repo ở local để git quản lý
+git add <file name> #add file từ working directory sang staging area
+git add . # add tất cả các file từ working directory sang staging area
+git commit -m "message" # dùng để chuyển file từ vùng staging sang vùng repo
