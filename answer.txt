@@ -1,21 +1,35 @@
 git config --global user.Name "Huy"
 git config --global user.Email "daoxuanhuy2004zz@gmail.com"
 
+git status
+git log
 
-git init  #tạo repo ở local
-git add . 
-git commit -m "message"
+git init                    #tạo repo ở local
+git add .                   #add tất cả các file từ vùng working directory lên vùng staging
+git commit -m "message"     #add tất cả các file từ vùng staging lên vùng repository
 
 git remote add origin <url> #Liên kết local với github
 git push origin main        #push code lên github
 
-git convension
+#git convension
 <type>: <short description>
 type : loại commit
     chore: sửa nhỏ lẻ, chính tả, xóa file không dùng tới
-    feat: thêm tính năng mới, test case mới
+    feat: thêm tính năng mới, test case mới, add file
     fix: sửa lỗi 1 test trước đó
 short description: mô tả ngắn gọn(50 ký tự), tiếng anh hoặc tiếng việt không dấu
 example:
     chore: remove unsaved files
     feat: add code for exercises 2
+
+
+#undo action
+git commit --amend                  #thay đổi commit message
+git restore -staged <filename>      #chuyển file từ vùng staging về vùng working directory
+git reset HEAD~1                    #rollback 1 commi, ~n rollback n commit
+
+#branching model
+git branch <ten_branch>             #tạo 1 nhánh mới
+git checkout <ten_branch>           #chuyển sang nhánh ten_branch
+git checkout -b <ten_branch>        #tạo 1 nhánh mới và chuyển sang nhánh đó
+        #tip: luôn tạo branch mới 
