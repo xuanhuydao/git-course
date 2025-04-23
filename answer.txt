@@ -24,12 +24,14 @@ example:
 
 
 #undo action
-git commit --amend                  #thay đổi commit message
+git commit --amend                  #vào giao diện thay đổi message(vim) của commit gần nhất
+git commit --amend -m'message"      #thay đổi message của commit gần nhất mà không cần vào giao diện
 git restore -staged <filename>      #chuyển file từ vùng staging về vùng working directory
-git reset HEAD~1                    #rollback 1 commi, ~n rollback n commit
+git reset HEAD~1                    #rollback 1 commit, ~n rollback n commit
 
 #branching model
 git branch <ten_branch>             #tạo 1 nhánh mới
 git checkout <ten_branch>           #chuyển sang nhánh ten_branch
 git checkout -b <ten_branch>        #tạo 1 nhánh mới và chuyển sang nhánh đó
         #tip: luôn tạo branch mới 
+git checkout <revision>             #chuyển về revision bất kì
