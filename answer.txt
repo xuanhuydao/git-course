@@ -13,6 +13,8 @@ git commit -m "message"     #add tất cả các file từ vùng staging lên v�
 
 git remote add origin <url> #Liên kết local với github
 git push origin main        #push code lên github
+git push                    #push code lên github
+git pull origin <ten_branch>
 
 #git convension
 <type>: <short description>
